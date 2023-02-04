@@ -22,6 +22,12 @@ a:hover {
   color: #fc8129;
   text-decoration: none;
 }
+header{
+  background-color: blue;
+}
+#main{
+  min-height: 100vh;
+}
 
 h1,
 h2,
