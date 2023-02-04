@@ -29,6 +29,12 @@ header{
   min-height: 100vh;
 }
 
+.top-search{
+  border-radius: 20px;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
 h1,
 h2,
 h3,
