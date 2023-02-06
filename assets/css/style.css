@@ -29,9 +29,13 @@ header{
 }
 
 .top-search{
-  border-radius: 20px;
+  margin-left: 1rem;
   padding: 0.25rem;
-  padding-left: 0.5rem;
+  border-radius: 15px;
+  border: 5px solid  rgba(252, 92, 156,0.7); 
+  background-color:#8fcbf0;
+  color:  rgba(0, 0, 0,0.9);
+  text-align: center;
 }
 
 h1,
@@ -41,6 +45,27 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.card{
+  color: black;
+}
+.px-5-bk-border{
+  border: 5px solid  rgba(252, 92, 156,0.5)  ;
+}
+.c-hover:hover{
+  border: 5px solid  rgba(252, 92, 156,1)  ;
+}
+.y-tran-up{
+  transition: all 0.4s ease-in-out;
+}
+.y-tran-up:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+  }
+.b-radius-15{
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -90,11 +115,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
+  min-height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  /* background: rgba(42, 44, 57, 0.9); */
   background-color:#c5e3f6;
   border-bottom:5px solid rgba(252, 92, 156,0.5);
 }
@@ -104,7 +128,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background:rgba(197, 227, 246,0.9);
+  background:rgba(67, 180, 250,0.8);
 }
 
 #header .logo h1 {
@@ -136,6 +160,12 @@ h6 {
 * Desktop Navigation 
 */
 
+.bi-tree{
+  font-size: 2.5rem;
+  color: green;
+  font-weight: bold;
+  overflow: hidden;
+}
 .navbar {
   padding: 0;
 }
@@ -179,6 +209,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   background:#fccde2;
+  border:4px solid rgba(252, 92, 156,0.7);
 }
 
 @media (max-width: 1366px) {
@@ -490,6 +521,16 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+#slideshow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slideshow img{
+  border: 5px solid rgba(252, 92, 156,0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
 
 .section-title {
   padding-bottom: 40px;
@@ -619,12 +660,20 @@ section {
 
 .features .nav-link:hover {
   color: rgb(252, 92, 156);
+  border: 5px solid rgba(252, 92, 156,0.5);
 }
 
 .features .nav-link.active {
   background: rgb(252, 92, 156);
   color: #fff;
   border-color: rgb(252, 92, 156);
+  border-radius: 15px;
+}
+
+.features img{
+  border: 5px solid rgba(252, 92, 156,0.5);
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -735,7 +784,7 @@ section {
   border-radius: 10px;
   background:#fcefee;
   box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
   width: 100%;
   height: 100%;
 }
@@ -751,11 +800,6 @@ section {
   top: calc(50% - 30px);
 }
 
-.services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
 
 .services .title {
   margin-left: 40px;
@@ -1430,10 +1474,15 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: none;
   font-size: 14px;
+  background-color: rgba(252, 92, 156,0.5);
+  color: white;
+  font-weight: bold;
 }
+
+
 
 .contact .php-email-form input {
   height: 44px;
@@ -1541,12 +1590,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #a4d5f3;
+  background: #43b4fa;
   color: #fc5c9c;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
-  border-top: 5px solid rgba(252, 92, 156,0.5);
 }
 
 #footer h3 {
@@ -1561,7 +1609,8 @@ section {
 
 #footer p {
   font-size: 15;
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -1573,7 +1622,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ef6603;
+  background: #fc5c9c;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1602,4 +1651,41 @@ section {
   width: 100%;
   height: 30px;
   background-color:#fc5c9c;
+}
+
+/* New Letter */
+
+.new-letter{
+  background: #74bfee;
+  padding: 1rem;
+  width: 100%;
+}
+.sub-input{
+  margin-right: 1rem;
+  padding: 0.3rem;
+  border-radius: 15px;
+  border: 3px solid #fc5c9c;
+  background-color:#74bfee;
+  color:  rgba(0, 0, 0,0.9);
+  text-align: center;
+}
+.new-letter .btn-outline-primary{
+  border: 3px solid #fc5c9c;
+  border-radius: 15px;
+  background-color: #fc5c9c;
+  color: white;
+  font-weight: bold;
+}
+.new-letter h5{
+  color: #fc5c9c;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 980px) {
+  .flex-column-md {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 }
